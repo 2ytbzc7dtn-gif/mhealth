@@ -577,15 +577,14 @@
         transition: background 0.5s;
     }
 
-    h1 {
-        bottom: 4.7rem;
-        left: 42rem;
-        z-index: 999;
-        position: absolute;
-        color: rgb(182, 182, 182);
-        position: absolute;
-        font-family: 'Oswald', sans-serif;
-    }
+h1 {
+    bottom: 4.7rem;
+    left: 36rem;
+    z-index: 999;
+    position: absolute;
+    color: rgb(182, 182, 182);
+    font-family: 'Oswald', sans-serif;
+}
 
     #next {
 
