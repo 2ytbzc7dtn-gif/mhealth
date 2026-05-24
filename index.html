@@ -7,10 +7,12 @@
 
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- JS -->
     <script src="./js/vendor/jquery-3.3.1.min.js"></script>
     <script src="./js/vendor/gsap.min.js"></script>
     <script src="./js/main.js" defer></script>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -25,17 +27,19 @@
 
     <!-- AUDIO -->
     <audio id="backgroundMusic" controls loop autoplay>
-        <source src="./ybyrayy-empty-reversed.mp3" type="audio/mp3">
+        <source src="./ybyrayy - empty [Reversed].mp3" type="audio/mp3">
     </audio>
 
     <audio id="clickSound" src="./boop.mp3"></audio>
-    <audio id="clickSounds" src="./mouse-click.mp3"></audio>
-    <audio id="hoverSounds" src="./mouse-click.mp3"></audio>
 
-    <!-- PRELOADER -->
+    <audio id="clickSounds" src="./Mouse Click Sound Effect.mp3"></audio>
+
+    <audio id="hoverSounds" src="./Mouse Click Sound Effect.mp3"></audio>
+
+    <!-- LOADING -->
     <img id="loading" src="./images/new/loading-gif.gif" alt="loading...">
 
-    <!-- BEGIN BUTTON -->
+    <!-- START BUTTON -->
     <div id="btnContainer">
 
         <img class="stars" src="">
@@ -122,6 +126,66 @@
             </div>
 
         </section>
+
+        <!-- SCREEN 3 -->
+        <section id="screen3">
+
+            <div id="ele7">
+                <p>C</p>
+            </div>
+
+            <div id="ele6">
+                <p>C</p>
+            </div>
+
+            <div id="ele5">
+                <p>C</p>
+            </div>
+
+            <div id="ele4">
+                <p>C</p>
+            </div>
+
+            <div class="emotions-container">
+
+                <img class="fear" src="./images/new/Fear.png">
+
+                <img class="anger" src="./images/new/Anger.png">
+
+                <img class="sad" src="./images/new/Sadness.png">
+
+                <img class="happy" src="./images/new/Happiness.png">
+
+                <img class="brain4" src="./images/new/fear1.png" onclick="showEmotion('fear')">
+
+                <img class="brain3" src="./images/new/sadness1.png" onclick="showEmotion('sad')">
+
+                <img class="brain2" src="./images/new/anger1.png" onclick="showEmotion('anger')">
+
+                <img class="brain1" src="./images/new/happiness1.png" onclick="showEmotion('happy')">
+
+            </div>
+
+            <img class="mainbrain" src="./images/new/mainbrain-1.png">
+
+            <img class="bot3" src="./images/new/bot2.png">
+
+            <img class="title3" src="./images/new/EMOTIONS.png">
+
+            <img class="bg2" src="./images/new/Gradient Fill 1.png">
+
+            <img class="hoverlegend3" src="./images/new/legend.png">
+
+        </section>
+
+        <!-- NAV -->
+        <div id="prev" onclick="playClickSound()">
+            <img src="./images/new/Triangle 2.png">
+        </div>
+
+        <div id="next" onclick="playClickSound()">
+            <img src="./images/new/Triangle 2-1.png">
+        </div>
 
     </main>
 
