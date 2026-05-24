@@ -4,66 +4,109 @@
     <meta charset="utf-8">
     <title>Brain Capacity</title>
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <script src="./js/vendor/jquery-3.3.1.min.js"></script>
-    <script src="./js/vendor/gsap.min.js"></script>
-    <script src="./js/main.js" defer></script>
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/gsap.min.js"></script>
+    <script src="js/main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.cdnfonts.com/css/new-walt-disney-font" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+    <!-- AUDIO -->
     <audio id="backgroundMusic" controls loop autoplay>
         <source src="./ybyrayy - empty [Reversed].mp3" type="audio/mp3">
     </audio>
 
     <audio id="clickSound" src="./boop.mp3"></audio>
+
     <audio id="clickSounds" src="./Mouse Click Sound Effect.mp3"></audio>
+
     <audio id="hoverSounds" src="./Mouse Click Sound Effect.mp3"></audio>
 
+    <!-- PRELOADER -->
     <img id="loading" src="./images/new/loading-gif.gif" alt="loading...">
 
+    <!-- BEGIN BUTTON -->
     <div id="btnContainer">
+
         <img class="stars" src="">
+
         <div id="begin"> Enter Your Mind</div>
+
         <img class="stars2" src="">
+
     </div>
 
+    <!-- MAIN -->
     <main>
 
         <!-- SCREEN 1 -->
         <section id="screen1">
+
             <img class="bg" src="./images/new/bg.png">
+
             <h1 class="begin1"> Start Presentation</h1>
+
             <img class="human" src="./images/new/humanbrain.png">
+
             <img class="cap" src="./images/new/CAPACITY.png">
+
             <img class="brain" src="./images/new/brain1.png">
+
         </section>
 
         <!-- SCREEN 2 -->
         <section id="screen2">
+
             <img class="memory" src="./images/new/MEMORY.png">
+
             <img class="hoverlegend" src="./images/new/legend.png">
+
             <img class="tri3" src="./images/new/Triangle 1.png">
+
             <img class="tri2" src="./images/new/Triangle 1-2.png">
+
             <img class="tri1" src="./images/new/Triangle 1-1.png">
+
             <img class="robot1" src="./images/new/bot1.png">
+
             <img class="bg2" src="./images/new/Gradient Fill 1.png">
+
             <img class="rect" src="./images/new/Rectangle 1.png">
+
             <img class="short" src="./images/new/short term 1 hr.png">
+
             <img class="long" src="./images/new/long term 24 hrs.png">
+
             <img class="number" src="./images/new/perc.png">
 
             <div id="ele9" class="ele eleHover">
+
                 <p class="pos" onclick="playClickSounds()"> C </p>
-                <div id="bar1" class="bars">70%</div>
-                <div id="bar2" class="bars">50%</div>
+
+                <div id="bar1" class="bars">
+                    70%
+                </div>
+
+                <div id="bar2" class="bars">
+                    50%
+                </div>
+
             </div>
 
             <div id="ele8" onclick="playHoverSounds()">
@@ -81,55 +124,91 @@
             <div id="ele10hover" class="ele10">
                 <img src="./images/new/average.png">
             </div>
+
         </section>
 
         <!-- SCREEN 3 -->
         <section id="screen3">
-            <div id="ele7"><p>C</p></div>
-            <div id="ele6"><p>C</p></div>
-            <div id="ele5"><p>C</p></div>
-            <div id="ele4"><p>C</p></div>
+
+            <div id="ele7">
+                <p>C</p>
+            </div>
+
+            <div id="ele6">
+                <p>C</p>
+            </div>
+
+            <div id="ele5">
+                <p>C</p>
+            </div>
+
+            <div id="ele4">
+                <p>C</p>
+            </div>
 
             <div class="emotions-container">
+
                 <img class="fear" src="./images/new/Fear.png">
+
                 <img class="anger" src="./images/new/Anger.png">
+
                 <img class="sad" src="./images/new/Sadness.png">
+
                 <img class="happy" src="./images/new/Happiness.png">
 
                 <img class="brain4" src="./images/new/fear1.png" onclick="showEmotion('fear')">
+
                 <img class="brain3" src="./images/new/sadness1.png" onclick="showEmotion('sad')">
+
                 <img class="brain2" src="./images/new/anger1.png" onclick="showEmotion('anger')">
+
                 <img class="brain1" src="./images/new/happiness1.png" onclick="showEmotion('happy')">
+
             </div>
 
             <img class="mainbrain" src="./images/new/mainbrain-1.png">
+
             <img class="bot3" src="./images/new/bot2.png">
+
             <img class="title3" src="./images/new/EMOTIONS.png">
+
             <img class="bg2" src="./images/new/Gradient Fill 1.png">
+
             <img class="hoverlegend3" src="./images/new/legend.png">
 
             <div id="ele11">
+
                 <p>H</p>
+
                 <img class="gray" src="./images/new/greybrain.png">
+
             </div>
 
             <div id="ele11hover" class="ele11">
                 <img src="./images/new/floater.png">
             </div>
+
         </section>
 
         <!-- SCREEN 4 -->
         <section id="screen4">
+
             <div class="heart-container">
+
                 <img class="hearts" src="./images/new/hearts.gif">
-                <div class="ele1" onclick="showEmotion('hearts'); playClickSounds()">C</div>
+
+                <div class="ele1" onclick="showEmotion('hearts')" onclick="playClickSounds()">C</div>
+
             </div>
 
             <div class="love">
+
                 <h3>
                     <span>Love</span> and <span>attraction</span> produces
-                    <span> oxytocin,</span> mixed with two chemicals...
+                    <span> oxytocin,</span>
+                    mixed with two chemicals...
                 </h3>
+
             </div>
 
             <div id="ele12">
@@ -149,55 +228,89 @@
             </div>
 
             <img class="hoverlegend4" src="./images/new/legend.png">
+
             <img class="bg" src="./images/new/bg.png">
+
             <img class="bot4" src="./images/new/bot3.png">
+
             <img class="title4" src="./images/new/LOVE.png">
+
+            <img class="bg" src="./images/new/bg.png">
+
         </section>
 
         <!-- SCREEN 5 -->
         <section id="screen5">
+
             <img class="hoverlegend6" src="./images/new/legend.png">
 
             <div class="sad-container">
+
                 <img class="sads" src="./images/new/giphy.gif">
-                <div class="ele2" onclick="showEmotion('sads'); playClickSounds()">C</div>
+
+                <div class="ele2" onclick="showEmotion('sads')" onclick="playClickSounds()">C</div>
+
             </div>
 
             <img class="tris" src="./images/new/tris.png">
+
             <img class="floater3" src="./images/new/floater3.png">
+
             <img class="floater2" src="./images/new/floater2.png">
+
             <img class="quote" src="./images/new/much.png">
+
             <img class="title5" src="./images/new/ABANDONMENT.png">
+
             <img class="bot5" src="./images/new/Untitled_Artwork 3.png">
+
             <img class="bg" src="./images/new/bg.png">
+
         </section>
 
         <!-- SCREEN 6 -->
         <section id="screen6">
+
             <img class="breathe" src="./images/new/BREATHE.png">
+
             <img class="just" src="./images/new/JUST_.png">
+
             <img class="cant" src="./images/new/that can’t happen!.png">
+
             <img class="explode" src="./images/new/EXPLODE!.png">
+
             <img class="likeour" src="./images/new/like our brains might_.png">
+
             <img class="itfeels" src="./images/new/it feels_.png">
+
             <img class="sometimes" src="./images/new/Sometimes_.png">
+
             <img class="bg4" src="./images/new/bg1.png">
+
         </section>
 
         <!-- SCREEN 7 -->
         <section id="screen7">
+
             <h6>Works Cited</h6>
+
             <img id="finalbot" src="./images/new/bot7.png">
 
             <ul>
-                <li>“Memory Capacity of Human Brain: 29 Human Memory Statistics & Facts.” Life-Changing ABA Therapy - Cross River Therapy, www.crossrivertherapy.com/memory-capacity-of-human-brain. Accessed 24 Jan. 2024.</li>
-                <li>“Love and the Brain.” Harvard Medical School, hms.harvard.edu/news-events/publications-archive/brain/love-brain. Accessed 24 Jan. 2024.</li>
-                <li>Heidi Moawad, MD. “How the Brain Processes Emotions.” Neurology Live, 14 Nov. 2020, www.neurologylive.com/view/how-brain-processes-emotions.</li>
+
+                <li>“Memory Capacity of Human Brain: 29 Human Memory Statistics & Facts.” Life-Changing ABA Therapy - Cross River Therapy.</li>
+
+                <li>“Love and the Brain.” Harvard Medical School.</li>
+
+                <li>Heidi Moawad, MD. “How the Brain Processes Emotions.” Neurology Live.</li>
+
             </ul>
 
             <img class="bg" src="./images/new/bg.png">
+
         </section>
 
+        <!-- NAV -->
         <div id="prev" onclick="playClickSound()">
             <img src="./images/new/Triangle 2.png">
         </div>
